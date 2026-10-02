@@ -172,4 +172,12 @@ return [
         'legal' => 'Projet ReNUTS — R&D agroalimentaire',
         'rights' => 'Tous droits réservés.',
     ],
+    'hero_process' => [
+        'nut' => 'NOISETTE',
+        'pressing' => 'PRESSAGE',
+        'powder' => 'POUDRE',
+        'products' => 'NOUVEAUX PRODUITS',
+        'resource' => 'UNE RESSOURCE EXISTANTE',
+        'value' => 'UNE NOUVELLE VALEUR ALIMENTAIRE',
+    ],
 ];

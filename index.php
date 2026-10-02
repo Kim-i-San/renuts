@@ -159,7 +159,7 @@ $contactHref = $contactEmail !== ''
                         </div>
                         <div class="renuts-step-copy">
                             <span>01</span>
-                            <strong>NOISETTE</strong>
+                            <strong><?= e(tr($t, 'hero_process.nut')) ?></strong>
                         </div>
                     </div>
 
@@ -182,7 +182,7 @@ $contactHref = $contactEmail !== ''
                         </div>
                         <div class="renuts-step-copy">
                             <span>02</span>
-                            <strong>PRESSAGE</strong>
+                            <strong><?= e(tr($t, 'hero_process.pressing')) ?></strong>
                         </div>
                     </div>
 
@@ -206,7 +206,7 @@ $contactHref = $contactEmail !== ''
                         </div>
                         <div class="renuts-step-copy">
                             <span>03</span>
-                            <strong>POUDRE</strong>
+                            <strong><?= e(tr($t, 'hero_process.powder')) ?></strong>
                         </div>
                     </div>
 
@@ -233,15 +233,15 @@ $contactHref = $contactEmail !== ''
                         </div>
                         <div class="renuts-step-copy">
                             <span>04</span>
-                            <strong>NOUVEAUX PRODUITS</strong>
+                            <strong><?= e(tr($t, 'hero_process.products')) ?></strong>
                         </div>
                     </div>
                 </div>
 
                 <div class="renuts-process-caption">
-                    <span>UNE RESSOURCE EXISTANTE</span>
+                    <span><?= e(tr($t, 'hero_process.resource')) ?></span>
                     <span class="renuts-caption-line"></span>
-                    <span>UNE NOUVELLE VALEUR ALIMENTAIRE</span>
+                    <span><?= e(tr($t, 'hero_process.value')) ?></span>
                 </div>
             </div>
         </div>

@@ -172,4 +172,12 @@ return [
         'legal' => 'Progetto ReNUTS — R&S alimentare',
         'rights' => 'Tutti i diritti riservati.',
     ],
+    'hero_process' => [
+        'nut' => 'NOCCIOLA',
+        'pressing' => 'SPREMITURA',
+        'powder' => 'POLVERE',
+        'products' => 'NUOVI PRODOTTI',
+        'resource' => 'UNA RISORSA ESISTENTE',
+        'value' => 'NUOVO VALORE ALIMENTARE',
+    ],
 ];

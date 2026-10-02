@@ -172,4 +172,12 @@ return [
         'legal' => 'Projekt ReNUTS — Lebensmittel-F&E',
         'rights' => 'Alle Rechte vorbehalten.',
     ],
+    'hero_process' => [
+        'nut' => 'HASELNUSS',
+        'pressing' => 'PRESSEN',
+        'powder' => 'PULVER',
+        'products' => 'NEUE PRODUKTE',
+        'resource' => 'EINE BESTEHENDE RESSOURCE',
+        'value' => 'NEUE WERTSCHÖPFUNG FÜR LEBENSMITTEL',
+    ],
 ];

@@ -172,4 +172,12 @@ return [
         'legal' => 'ReNUTS project — Food R&D',
         'rights' => 'All rights reserved.',
     ],
+    'hero_process' => [
+        'nut' => 'HAZELNUT',
+        'pressing' => 'PRESSING',
+        'powder' => 'POWDER',
+        'products' => 'NEW PRODUCTS',
+        'resource' => 'AN EXISTING RESOURCE',
+        'value' => 'NEW FOOD VALUE',
+    ],
 ];
