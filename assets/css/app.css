@@ -1191,3 +1191,243 @@ input {
         flex-direction: column;
     }
 }
+
+
+/* ReNUTS hero — clean schematic process */
+.hero-visual {
+    min-height: 430px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.renuts-process {
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 42px 1fr 42px 1fr 42px 1.16fr;
+    align-items: center;
+    gap: 0;
+    padding: 42px 34px 34px;
+    border: 1px solid rgba(255,255,255,.1);
+    border-radius: 32px;
+    background: rgba(255,255,255,.025);
+}
+
+.renuts-process-track {
+    position: absolute;
+    left: 11%;
+    right: 11%;
+    top: 111px;
+    height: 1px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(47,172,102,.18) 8%,
+        rgba(47,172,102,.18) 92%,
+        transparent
+    );
+}
+
+.renuts-step {
+    min-width: 0;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.renuts-icon {
+    width: 138px;
+    height: 138px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,.1);
+    background: #242422;
+    box-shadow:
+        0 0 0 10px rgba(29,29,27,.92),
+        0 16px 40px rgba(0,0,0,.16);
+}
+
+.renuts-icon svg {
+    width: 78px;
+    height: 78px;
+    fill: none;
+    stroke: var(--green);
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.renuts-icon-final {
+    border-color: rgba(47,172,102,.36);
+    background: rgba(47,172,102,.09);
+}
+
+.renuts-step-copy {
+    min-height: 53px;
+    margin-top: 22px;
+}
+
+.renuts-step-copy span {
+    display: block;
+    margin-bottom: 7px;
+    color: rgba(255,255,255,.35);
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: .15em;
+}
+
+.renuts-step-copy strong {
+    display: block;
+    color: rgba(255,255,255,.92);
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1.35;
+    letter-spacing: .13em;
+}
+
+.renuts-arrow {
+    position: relative;
+    z-index: 3;
+    display: grid;
+    place-items: center;
+}
+
+.renuts-arrow svg {
+    width: 34px;
+    height: 18px;
+    fill: none;
+    stroke: var(--green);
+    stroke-width: 2.2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.renuts-process-caption {
+    margin-top: 22px;
+    display: grid;
+    grid-template-columns: auto minmax(30px, 1fr) auto;
+    align-items: center;
+    gap: 13px;
+    color: rgba(255,255,255,.38);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-align: center;
+}
+
+.renuts-caption-line {
+    height: 1px;
+    background: rgba(255,255,255,.11);
+}
+
+@media (max-width: 1120px) {
+    .renuts-process {
+        grid-template-columns: 1fr 30px 1fr 30px 1fr 30px 1.12fr;
+        padding-inline: 22px;
+    }
+
+    .renuts-icon {
+        width: 116px;
+        height: 116px;
+    }
+
+    .renuts-icon svg {
+        width: 67px;
+        height: 67px;
+    }
+
+    .renuts-process-track {
+        top: 100px;
+    }
+
+    .renuts-arrow svg {
+        width: 27px;
+    }
+}
+
+@media (max-width: 980px) {
+    .hero-visual {
+        min-height: auto;
+    }
+
+    .renuts-process {
+        max-width: 720px;
+        margin-inline: auto;
+    }
+}
+
+@media (max-width: 680px) {
+    .renuts-process {
+        width: min(100%, 360px);
+        grid-template-columns: 1fr;
+        gap: 0;
+        padding: 28px 24px;
+        border-radius: 28px;
+    }
+
+    .renuts-process-track {
+        left: 50%;
+        right: auto;
+        top: 70px;
+        bottom: 70px;
+        width: 1px;
+        height: auto;
+        background: linear-gradient(
+            180deg,
+            transparent,
+            rgba(47,172,102,.18) 8%,
+            rgba(47,172,102,.18) 92%,
+            transparent
+        );
+    }
+
+    .renuts-step {
+        padding: 8px 0;
+    }
+
+    .renuts-icon {
+        width: 108px;
+        height: 108px;
+        box-shadow:
+            0 0 0 9px rgba(29,29,27,.92),
+            0 12px 30px rgba(0,0,0,.14);
+    }
+
+    .renuts-icon svg {
+        width: 62px;
+        height: 62px;
+    }
+
+    .renuts-step-copy {
+        min-height: 0;
+        margin-top: 16px;
+    }
+
+    .renuts-arrow {
+        height: 48px;
+        transform: rotate(90deg);
+    }
+
+    .renuts-arrow svg {
+        width: 30px;
+    }
+
+    .renuts-process-caption {
+        width: min(100%, 360px);
+        margin: 18px auto 0;
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .renuts-caption-line {
+        width: 46px;
+        margin-inline: auto;
+    }
+}

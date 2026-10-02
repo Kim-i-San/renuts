@@ -144,22 +144,104 @@ $contactHref = $contactEmail !== ''
             </div>
 
             <div class="hero-visual reveal" aria-hidden="true">
-                <div class="material-card material-card-main">
-                    <div class="material-mark">
-                        <span></span><span></span><span></span>
+                <div class="renuts-process">
+                    <div class="renuts-process-track"></div>
+
+                    <div class="renuts-step">
+                        <div class="renuts-icon">
+                            <svg viewBox="0 0 120 120" aria-hidden="true">
+                                <path d="M60 21C44 21 32 34 32 51c0 22 11 43 28 48 17-5 28-26 28-48 0-17-12-30-28-30Z"/>
+                                <path d="M46 28c3 8 8 13 14 17"/>
+                                <path d="M74 28c-3 8-8 13-14 17"/>
+                                <path d="M60 44c-8 13-12 26-10 42"/>
+                                <path d="M60 44c8 13 12 26 10 42"/>
+                            </svg>
+                        </div>
+                        <div class="renuts-step-copy">
+                            <span>01</span>
+                            <strong>NOISETTE</strong>
+                        </div>
                     </div>
-                    <p>PRESS CAKE</p>
-                    <strong>→ ReNUTS</strong>
+
+                    <div class="renuts-arrow">
+                        <svg viewBox="0 0 52 20" aria-hidden="true">
+                            <path d="M2 10h43"/>
+                            <path d="m37 3 8 7-8 7"/>
+                        </svg>
+                    </div>
+
+                    <div class="renuts-step">
+                        <div class="renuts-icon">
+                            <svg viewBox="0 0 120 120" aria-hidden="true">
+                                <rect x="34" y="24" width="52" height="15" rx="4"/>
+                                <path d="M45 39v22h30V39"/>
+                                <path d="M60 61v14"/>
+                                <path d="M38 80c8-6 16-6 22 0 7-6 15-6 22 0"/>
+                                <path d="M33 91c10-7 20-7 27 0 8-7 18-7 27 0"/>
+                            </svg>
+                        </div>
+                        <div class="renuts-step-copy">
+                            <span>02</span>
+                            <strong>PRESSAGE</strong>
+                        </div>
+                    </div>
+
+                    <div class="renuts-arrow">
+                        <svg viewBox="0 0 52 20" aria-hidden="true">
+                            <path d="M2 10h43"/>
+                            <path d="m37 3 8 7-8 7"/>
+                        </svg>
+                    </div>
+
+                    <div class="renuts-step">
+                        <div class="renuts-icon">
+                            <svg viewBox="0 0 120 120" aria-hidden="true">
+                                <path d="M29 69h62c-2 18-13 29-31 29S31 87 29 69Z"/>
+                                <path d="M38 68c5-14 13-21 22-21 10 0 18 7 23 21"/>
+                                <circle cx="49" cy="57" r="3"/>
+                                <circle cx="60" cy="51" r="3"/>
+                                <circle cx="71" cy="58" r="3"/>
+                                <circle cx="55" cy="63" r="2.4"/>
+                            </svg>
+                        </div>
+                        <div class="renuts-step-copy">
+                            <span>03</span>
+                            <strong>POUDRE</strong>
+                        </div>
+                    </div>
+
+                    <div class="renuts-arrow">
+                        <svg viewBox="0 0 52 20" aria-hidden="true">
+                            <path d="M2 10h43"/>
+                            <path d="m37 3 8 7-8 7"/>
+                        </svg>
+                    </div>
+
+                    <div class="renuts-step">
+                        <div class="renuts-icon renuts-icon-final">
+                            <svg viewBox="0 0 120 120" aria-hidden="true">
+                                <path d="M19 59h42c-1 18-9 29-21 29S20 77 19 59Z"/>
+                                <path d="M25 57c4-10 9-15 15-15s12 5 15 15"/>
+                                <circle cx="32" cy="50" r="2.5"/>
+                                <circle cx="41" cy="47" r="2.5"/>
+                                <circle cx="49" cy="52" r="2.5"/>
+                                <rect x="68" y="41" width="32" height="47" rx="8" transform="rotate(8 84 65)"/>
+                                <circle cx="79" cy="56" r="2.3"/>
+                                <circle cx="88" cy="64" r="2.3"/>
+                                <circle cx="79" cy="73" r="2.3"/>
+                            </svg>
+                        </div>
+                        <div class="renuts-step-copy">
+                            <span>04</span>
+                            <strong>NOUVEAUX PRODUITS</strong>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="material-card material-card-small">
-                    <span>01</span>
-                    <p>RESOURCE</p>
-                </div>
-
-                <div class="material-card material-card-small material-card-bottom">
-                    <span>02</span>
-                    <p>NEW VALUE</p>
+                <div class="renuts-process-caption">
+                    <span>UNE RESSOURCE EXISTANTE</span>
+                    <span class="renuts-caption-line"></span>
+                    <span>UNE NOUVELLE VALEUR ALIMENTAIRE</span>
                 </div>
             </div>
         </div>

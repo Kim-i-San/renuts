@@ -10,7 +10,7 @@ return [
      * Ajoute l'adresse e-mail avant mise en ligne.
      * Exemple : 'contact_email' => 'hello@forcento.ch',
      */
-    'contact_email' => '',
+    'contact_email' => 'kim.chiquet@outlook.com',
 
     'locales' => ['fr', 'en', 'de', 'it'],
     'default_locale' => 'fr',
