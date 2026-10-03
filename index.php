@@ -80,6 +80,16 @@ $contactHref = $contactEmail !== ''
 
     : '#contact';
 
+$assetVersion = static function (string $path): string
+{
+    $fullPath = __DIR__.'/'.ltrim($path, '/');
+
+    return is_file($fullPath)
+        ? (string) filemtime($fullPath)
+        : '1';
+};
+
+
 ?>
 
 <!doctype html>
@@ -98,17 +108,71 @@ $contactHref = $contactEmail !== ''
 
     <meta name="theme-color" content="#1D1D1B">
 
-    <link rel="icon" type="image/png" href="<?= $basePath ?>/assets/img/favicon.png">
+    <link rel="icon" type="image/png" href="/assets/img/favicon.png?v=<?= e($assetVersion('assets/img/favicon.png')) ?>">
 
-    <link rel="shortcut icon" href="<?= $basePath ?>/assets/img/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="/assets/img/favicon.png?v=<?= e($assetVersion('assets/img/favicon.png')) ?>">
 
-    <link rel="apple-touch-icon" href="<?= $basePath ?>/assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="/assets/img/favicon.png?v=<?= e($assetVersion('assets/img/favicon.png')) ?>">
 
-    <link rel="stylesheet" href="/assets/css/app.css">
+    <link rel="stylesheet" href="/assets/css/app.css?v=<?= e($assetVersion('assets/css/app.css')) ?>">
 
-    <script defer src="/assets/js/app.js"></script>
+    <script defer src="/assets/js/app.js?v=<?= e($assetVersion('assets/js/app.js')) ?>"></script>
 
-</head>
+    <style>
+        /*
+         * Critical header logo rules.
+         * These live inline on purpose so production cannot show both logos
+         * even if a stale external stylesheet is served from cache.
+         */
+        .brand-logo-stack {
+            width: 88px;
+            height: 48px;
+            position: relative;
+            flex: 0 0 88px;
+            display: block;
+        }
+
+        .brand-logo-stack .brand-logo {
+            width: 88px;
+            height: 48px;
+            position: absolute;
+            inset: 0;
+            display: block;
+            object-fit: contain;
+            transition: opacity 180ms ease;
+        }
+
+        .brand-logo-dark-bg {
+            opacity: 1 !important;
+        }
+
+        .brand-logo-light-bg {
+            opacity: 0 !important;
+        }
+
+        .site-header.scrolled .brand-logo-dark-bg {
+            opacity: 0 !important;
+        }
+
+        .site-header.scrolled .brand-logo-light-bg {
+            opacity: 1 !important;
+        }
+
+        @media (max-width: 680px) {
+            .brand-logo-stack {
+                width: 72px;
+                height: 38px;
+                flex-basis: 72px;
+            }
+
+            .brand-logo-stack .brand-logo {
+                width: 72px;
+                height: 38px;
+            }
+        }
+    </style>
+
+    </head>
 
 <body>
 
@@ -118,8 +182,8 @@ $contactHref = $contactEmail !== ''
 
         <a class="brand" href="<?= e(locale_url($locale)) ?>" aria-label="FORCENTO ReNUTS">
             <span class="brand-logo-stack" aria-hidden="true">
-                <img class="brand-logo brand-logo-dark-bg" src="/assets/img/forcento-logo2.png" alt="">
-                <img class="brand-logo brand-logo-light-bg" src="/assets/img/forcento-logo.png" alt="">
+                <img class="brand-logo brand-logo-dark-bg" src="/assets/img/forcento-logo2.png?v=<?= e($assetVersion('assets/img/forcento-logo2.png')) ?>" alt="">
+                <img class="brand-logo brand-logo-light-bg" src="/assets/img/forcento-logo.png?v=<?= e($assetVersion('assets/img/forcento-logo.png')) ?>" alt="">
             </span>
             <span class="brand-project">ReNUTS</span>
         </a>
@@ -768,7 +832,7 @@ $contactHref = $contactEmail !== ''
 
             <div class="reveal">
 
-                <img class="about-logo" src="/assets/img/forcento-logo.png" alt="FORCENTO">
+                <img class="about-logo" src="/assets/img/forcento-logo.png?v=<?= e($assetVersion('assets/img/forcento-logo.png')) ?>" alt="FORCENTO">
 
             </div>
 
@@ -841,6 +905,24 @@ $contactHref = $contactEmail !== ''
     </div>
 
 </footer>
+
+
+<script>
+(() => {
+    const header = document.querySelector('[data-header]');
+
+    if (!header) {
+        return;
+    }
+
+    const syncHeaderState = () => {
+        header.classList.toggle('scrolled', window.scrollY > 20);
+    };
+
+    syncHeaderState();
+    window.addEventListener('scroll', syncHeaderState, { passive: true });
+})();
+</script>
 
 </body>
 
