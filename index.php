@@ -200,6 +200,8 @@ $assetVersion = static function (string $path): string
 
             <a href="#partners"><?= e(tr($t, 'nav.partners')) ?></a>
 
+            <a href="#faq"><?= e(tr($t, 'nav.faq')) ?></a>
+
         </nav>
 
         <div class="header-actions">
@@ -251,6 +253,8 @@ $assetVersion = static function (string $path): string
             <a href="#status"><?= e(tr($t, 'nav.status')) ?></a>
 
             <a href="#partners"><?= e(tr($t, 'nav.partners')) ?></a>
+
+            <a href="#faq"><?= e(tr($t, 'nav.faq')) ?></a>
 
             <a class="mobile-contact-link" href="<?= e($contactHref) ?>"><?= e(tr($t, 'nav.contact')) ?></a>
 
@@ -739,17 +743,89 @@ $assetVersion = static function (string $path): string
 
         <div class="shell local-grid">
 
-            <div class="local-graphic reveal" aria-hidden="true">
+            <div class="local-flow reveal" role="group" aria-label="<?= e(tr($t, 'local.diagram.label')) ?>">
 
-                <span class="fruit fruit-one"></span>
+                <div class="local-flow-inputs">
 
-                <span class="fruit fruit-two"></span>
+                    <article class="local-flow-node local-flow-node-input">
+                        <div class="local-flow-icon" aria-hidden="true">
+                            <svg viewBox="0 0 64 64">
+                                <path d="M17 43c3-11 9-18 15-18s12 7 15 18c-7 5-23 5-30 0Z"/>
+                                <path d="M22 27c2-7 6-11 10-11s8 4 10 11"/>
+                                <circle cx="25" cy="36" r="2.2"/>
+                                <circle cx="32" cy="32" r="2"/>
+                                <circle cx="39" cy="37" r="2.2"/>
+                            </svg>
+                        </div>
+                        <div class="local-flow-copy">
+                            <strong><?= e(tr($t, 'local.diagram.cake_title')) ?></strong>
+                            <span><?= e(tr($t, 'local.diagram.cake_text')) ?></span>
+                        </div>
+                    </article>
 
-                <span class="fruit fruit-three"></span>
+                    <div class="local-flow-plus" aria-hidden="true">+</div>
 
-                <div class="local-arrow">→</div>
+                    <article class="local-flow-node local-flow-node-input">
+                        <div class="local-flow-icon local-flow-icon-fruit" aria-hidden="true">
+                            <svg viewBox="0 0 64 64">
+                                <path d="M20 31c0-9 6-14 12-14s12 5 12 14c0 11-5 18-12 18S20 42 20 31Z"/>
+                                <path d="M32 18c1-5 4-8 8-10"/>
+                                <path d="M35 13c5-2 9-1 12 1-2 5-6 8-12 8"/>
+                                <path d="M12 40c0-7 4-11 9-11"/>
+                                <path d="M44 39c5 0 8 3 8 8"/>
+                            </svg>
+                        </div>
+                        <div class="local-flow-copy">
+                            <strong><?= e(tr($t, 'local.diagram.binder_title')) ?></strong>
+                            <span><?= e(tr($t, 'local.diagram.binder_text')) ?></span>
+                        </div>
+                    </article>
 
-                <strong><?= e(tr($t, 'local.graphic')) ?></strong>
+                </div>
+
+                <div class="local-flow-arrow" aria-hidden="true">
+                    <span></span>
+                </div>
+
+                <article class="local-flow-node local-flow-node-main">
+                    <div class="local-flow-icon" aria-hidden="true">
+                        <svg viewBox="0 0 64 64">
+                            <path d="M14 31h36c-2 13-9 21-18 21S16 44 14 31Z"/>
+                            <path d="M18 30c3-8 8-12 14-12s11 4 14 12"/>
+                            <path d="M21 24 13 14"/>
+                            <path d="M43 24 51 14"/>
+                            <path d="M25 18 22 10"/>
+                            <path d="M39 18 42 10"/>
+                        </svg>
+                    </div>
+                    <div class="local-flow-copy">
+                        <strong><?= e(tr($t, 'local.diagram.mix_title')) ?></strong>
+                        <span><?= e(tr($t, 'local.diagram.mix_text')) ?></span>
+                    </div>
+                </article>
+
+                <div class="local-flow-arrow" aria-hidden="true">
+                    <span></span>
+                </div>
+
+                <article class="local-flow-node local-flow-node-output">
+                    <div class="local-flow-icon" aria-hidden="true">
+                        <svg viewBox="0 0 64 64">
+                            <rect x="10" y="17" width="16" height="34" rx="4"/>
+                            <circle cx="16" cy="25" r="1.8"/>
+                            <circle cx="21" cy="32" r="1.8"/>
+                            <circle cx="15" cy="40" r="1.8"/>
+                            <path d="M33 33h22c-1 11-5 17-11 17s-10-6-11-17Z"/>
+                            <path d="M35 32c2-6 5-9 9-9s7 3 9 9"/>
+                            <circle cx="40" cy="28" r="1.6"/>
+                            <circle cx="46" cy="27" r="1.6"/>
+                        </svg>
+                    </div>
+                    <div class="local-flow-copy">
+                        <strong><?= e(tr($t, 'local.diagram.output_title')) ?></strong>
+                        <span><?= e(tr($t, 'local.diagram.output_text')) ?></span>
+                    </div>
+                </article>
 
             </div>
 
@@ -886,12 +962,12 @@ $assetVersion = static function (string $path): string
 
         <div class="shell faq-grid">
 
-            <div class="section-heading reveal">
+            <div class="section-heading">
                 <div class="eyebrow"><?= e(tr($t, 'faq.eyebrow')) ?></div>
                 <h2><?= e(tr($t, 'faq.title')) ?></h2>
             </div>
 
-            <div class="faq-list reveal">
+            <div class="faq-list">
                 <?php foreach (tr($t, 'faq.items', []) as $item): ?>
                     <details class="faq-item">
                         <summary>

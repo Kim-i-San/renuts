@@ -3438,3 +3438,232 @@ body {
         padding-right: 0;
     }
 }
+
+
+/* =========================================================
+   Local value schema v5 — pure HTML/SVG, multilingual safe
+   ========================================================= */
+
+.local-flow {
+    min-width: 0;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid var(--line);
+    border-radius: 36px;
+    background: white;
+    overflow: hidden;
+}
+
+.local-flow-inputs {
+    min-width: 0;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 30px minmax(0, 1fr);
+    gap: 10px;
+    align-items: stretch;
+}
+
+.local-flow-node {
+    min-width: 0;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    background: #fbfbf7;
+}
+
+.local-flow-node-input {
+    min-height: 118px;
+}
+
+.local-flow-node-main {
+    background: rgba(47,172,102,.08);
+    border-color: rgba(47,172,102,.28);
+}
+
+.local-flow-node-output {
+    background: var(--ink);
+    border-color: var(--ink);
+}
+
+.local-flow-icon {
+    width: 54px;
+    height: 54px;
+    flex: 0 0 54px;
+    display: grid;
+    place-items: center;
+    border-radius: 16px;
+    background: white;
+    color: var(--green-deep);
+}
+
+.local-flow-node-main .local-flow-icon {
+    background: var(--green);
+    color: white;
+}
+
+.local-flow-node-output .local-flow-icon {
+    background: rgba(255,255,255,.1);
+    color: white;
+}
+
+.local-flow-icon svg {
+    width: 40px;
+    height: 40px;
+    display: block;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2.6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.local-flow-icon-fruit {
+    color: #78973f;
+}
+
+.local-flow-copy {
+    min-width: 0;
+}
+
+.local-flow-copy strong,
+.local-flow-copy span {
+    display: block;
+    min-width: 0;
+    overflow-wrap: anywhere;
+    hyphens: auto;
+}
+
+.local-flow-copy strong {
+    color: var(--ink);
+    font-family: "Manrope", sans-serif;
+    font-size: clamp(14px, 1.3vw, 17px);
+    line-height: 1.18;
+    font-weight: 700;
+}
+
+.local-flow-copy span {
+    margin-top: 6px;
+    color: var(--muted);
+    font-size: 11px;
+    line-height: 1.45;
+}
+
+.local-flow-node-output .local-flow-copy strong {
+    color: white;
+}
+
+.local-flow-node-output .local-flow-copy span {
+    color: rgba(255,255,255,.62);
+}
+
+.local-flow-plus {
+    display: grid;
+    place-items: center;
+    color: var(--green);
+    font-family: "Manrope", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.local-flow-arrow {
+    height: 44px;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+.local-flow-arrow span {
+    width: 2px;
+    height: 24px;
+    position: relative;
+    background: var(--green);
+}
+
+.local-flow-arrow span::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    border-right: 2px solid var(--green);
+    border-bottom: 2px solid var(--green);
+    transform: translate(-50%, 1px) rotate(45deg);
+}
+
+@media (max-width: 1120px) {
+    .local-flow {
+        padding: 24px;
+    }
+
+    .local-flow-inputs {
+        grid-template-columns: minmax(0, 1fr) 24px minmax(0, 1fr);
+        gap: 8px;
+    }
+
+    .local-flow-node {
+        padding: 15px;
+        gap: 11px;
+    }
+
+    .local-flow-icon {
+        width: 46px;
+        height: 46px;
+        flex-basis: 46px;
+    }
+
+    .local-flow-icon svg {
+        width: 34px;
+        height: 34px;
+    }
+}
+
+@media (max-width: 820px) {
+    .local-flow {
+        max-width: 680px;
+        width: 100%;
+        margin-inline: auto;
+    }
+}
+
+@media (max-width: 520px) {
+    .local-flow {
+        padding: 18px;
+        border-radius: 26px;
+    }
+
+    .local-flow-inputs {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .local-flow-plus {
+        height: 24px;
+        font-size: 24px;
+    }
+
+    .local-flow-node {
+        min-height: 0;
+        padding: 16px;
+    }
+
+    .local-flow-copy strong {
+        font-size: 15px;
+    }
+
+    .local-flow-copy span {
+        font-size: 10px;
+    }
+
+    .local-flow-arrow {
+        height: 38px;
+    }
+
+    .local-flow-arrow span {
+        height: 20px;
+    }
+}
