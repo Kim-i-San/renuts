@@ -3101,3 +3101,43 @@ input {
         width: 30px;
     }
 }
+
+
+/* Mobile language selector */
+.mobile-language-switcher {
+    display: none;
+}
+
+@media (max-width: 680px) {
+    .mobile-language-switcher {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 14px 0;
+        border-bottom: 1px solid var(--line);
+    }
+
+    .mobile-menu .mobile-language-switcher a {
+        min-width: 42px;
+        padding: 9px 11px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: white;
+        color: var(--ink);
+        font-size: 11px;
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: .08em;
+        opacity: .55;
+    }
+
+    .mobile-menu .mobile-language-switcher a.active {
+        background: var(--ink);
+        border-color: var(--ink);
+        color: white;
+        opacity: 1;
+    }
+}

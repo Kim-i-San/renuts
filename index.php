@@ -252,6 +252,16 @@ $assetVersion = static function (string $path): string
 
             <a href="#partners"><?= e(tr($t, 'nav.partners')) ?></a>
 
+            <div class="mobile-language-switcher" aria-label="Language">
+                <?php foreach ($config['locales'] as $availableLocale): ?>
+                    <a
+                        href="<?= e(locale_url($availableLocale)) ?>"
+                        class="<?= $availableLocale === $locale ? 'active' : '' ?>"
+                        hreflang="<?= e($availableLocale) ?>"
+                    ><?= strtoupper(e($availableLocale)) ?></a>
+                <?php endforeach; ?>
+            </div>
+
             <a href="<?= e($contactHref) ?>"><?= e(tr($t, 'nav.contact')) ?></a>
 
         </div>
