@@ -1,55 +1,17 @@
-# FORCENTO ReNUTS — site vitrine
+ReNUTS — Content update v4
 
-Petit site vitrine PHP multilingue (FR / EN / DE / IT), sans framework ni base de données.
+Based on the latest v3 site. Existing visual identity and schematics preserved.
 
-## Lancer en local dans Visual Studio Code
+Added / improved:
+- FAQ in FR/EN/DE/IT
+- local binder concept: quince / apple / pear
+- explicit 3-phase progress section
+- Join the project redesigned into 3 clear contribution axes
+- existing hero and Proof-of-Concept schematics preserved
+- existing responsive / DE / mobile language / favicon / logo logic preserved
 
-Ouvrir un terminal à la racine du projet puis :
-
-```bash
-php -S localhost:8000 router.php
-```
-
-Ouvrir ensuite :
-
-- http://localhost:8000/fr/
-- http://localhost:8000/en/
-- http://localhost:8000/de/
-- http://localhost:8000/it/
-
-## Déploiement
-
-Le site peut être placé directement dans le dossier web du domaine / sous-domaine.
-`.htaccess` gère les URLs multilingues propres sur Apache.
-
-Si le serveur utilise Nginx, faire pointer toutes les routes qui ne correspondent pas
-à un fichier existant vers `index.php`.
-
-## À faire avant mise en ligne
-
-Dans `config/site.php`, renseigner :
-
-```php
-'contact_email' => 'votre@email.ch',
-```
-
-Le bouton "Parlons du projet" utilisera alors automatiquement cette adresse.
-
-## Couleurs
-
-- FORCENTO green: `#2FAC66`
-- FORCENTO charcoal: `#1D1D1B`
-- Paper: `#F4F3EC`
-
-Le vert et le noir sont repris directement du logo fourni.
-
-## Structure
-
-- `index.php` : page unique et routing langue
-- `lang/*.php` : textes FR / EN / DE / IT
-- `assets/css/app.css` : design
-- `assets/js/app.js` : menu mobile + animations
-- `assets/img/forcento-logo.png` : logo fourni, recadré
-- `config/site.php` : société / contact / langues
-- `router.php` : serveur PHP local
-- `.htaccess` : rewrite Apache
+Contact:
+- FORCENTO Sàrl
+- Epalinges, VD
+- Kim · Florian
+- ffahrny@gmail.com

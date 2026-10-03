@@ -3149,3 +3149,292 @@ input {
         color: white;
     }
 }
+
+
+/* =========================================================
+   Header responsive safety — prevents long DE navigation
+   from widening the viewport on medium screens.
+   ========================================================= */
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.header-inner,
+.desktop-nav,
+.header-actions {
+    min-width: 0;
+}
+
+@media (max-width: 1120px) {
+    .desktop-nav,
+    .desktop-cta {
+        display: none;
+    }
+
+    .menu-button {
+        display: flex;
+    }
+
+    .site-header:not(.scrolled) .menu-button {
+        background: rgba(255,255,255,.1);
+    }
+
+    .site-header:not(.scrolled) .menu-button span {
+        background: white;
+    }
+
+    .mobile-menu {
+        position: fixed;
+        inset: 84px 0 auto;
+        padding: 20px 0 28px;
+        border-bottom: 1px solid var(--line);
+        background: white;
+    }
+
+    .mobile-menu.open {
+        display: block;
+    }
+
+    .mobile-menu .shell {
+        display: grid;
+        gap: 4px;
+    }
+
+    .mobile-menu > .shell > a {
+        padding: 13px 0;
+        border-bottom: 1px solid var(--line);
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 680px) {
+    .mobile-menu {
+        inset: 70px 0 auto;
+    }
+}
+
+
+/* =========================================================
+   ReNUTS content v4 — phases, 3 partner axes, FAQ
+   ========================================================= */
+
+/* Status phases */
+.status-phase {
+    align-items: start;
+}
+
+.status-phase-copy {
+    min-width: 0;
+}
+
+.status-phase-label {
+    margin-bottom: 8px;
+    color: var(--green);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+.status-phase h3 {
+    margin: 0 0 12px;
+    color: white;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.status-phase ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.status-phase ul li {
+    padding: 4px 0 4px 16px;
+    display: block;
+    border: 0;
+    position: relative;
+    color: rgba(255,255,255,.68);
+    font-size: 14px;
+    line-height: 1.55;
+}
+
+.status-phase ul li::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    left: 0;
+    top: 13px;
+    border-radius: 50%;
+    background: var(--green);
+}
+
+/* Join project — 3 axes */
+.partner-axes {
+    max-width: 1080px;
+    margin: 48px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    text-align: left;
+}
+
+.partner-axis {
+    min-height: 330px;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--line);
+    border-radius: 24px;
+    background: white;
+}
+
+.partner-axis-number {
+    color: var(--green);
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.partner-axis-kicker {
+    margin-top: 34px;
+    color: var(--muted);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+.partner-axis h3 {
+    margin: 10px 0 12px;
+    font-size: 21px;
+    line-height: 1.2;
+}
+
+.partner-axis p {
+    margin: 0 0 26px;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+.partner-axis a {
+    margin-top: auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.partner-axis a span {
+    color: var(--green);
+    font-size: 18px;
+    transition: transform 150ms ease;
+}
+
+.partner-axis a:hover span {
+    transform: translateX(3px);
+}
+
+/* FAQ */
+.faq-section {
+    background: var(--paper);
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: .75fr 1.25fr;
+    gap: 100px;
+    align-items: start;
+}
+
+.faq-list {
+    border-top: 1px solid var(--line);
+}
+
+.faq-item {
+    border-bottom: 1px solid var(--line);
+}
+
+.faq-item summary {
+    padding: 24px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    cursor: pointer;
+    list-style: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-plus {
+    width: 34px;
+    height: 34px;
+    flex: 0 0 auto;
+    display: grid;
+    place-items: center;
+    border: 1px solid var(--line);
+    border-radius: 50%;
+    color: var(--green-deep);
+    font-size: 22px;
+    font-weight: 400;
+    transition: transform 180ms ease;
+}
+
+.faq-item[open] .faq-plus {
+    transform: rotate(45deg);
+}
+
+.faq-answer {
+    max-width: 760px;
+    padding: 0 54px 24px 0;
+}
+
+.faq-answer p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.75;
+}
+
+@media (max-width: 980px) {
+    .partner-axes {
+        grid-template-columns: 1fr;
+    }
+
+    .partner-axis {
+        min-height: auto;
+    }
+
+    .faq-grid {
+        grid-template-columns: 1fr;
+        gap: 44px;
+    }
+}
+
+@media (max-width: 680px) {
+    .status-list li.status-phase {
+        grid-template-columns: 38px 1fr;
+    }
+
+    .partner-axis {
+        padding: 24px;
+    }
+
+    .faq-item summary {
+        font-size: 16px;
+    }
+
+    .faq-answer {
+        padding-right: 0;
+    }
+}

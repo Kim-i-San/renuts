@@ -5,7 +5,7 @@ return [
     'company' => 'FORCENTO Sàrl',
     'address' => 'Epalinges, VD',
     'founders' => ['Kim', 'Florian'],
-    'contact_email' => 'kim.chiquet@outlook.com',
+    'contact_email' => 'ffahrny@gmail.com',
     'locales' => ['fr', 'en', 'de', 'it'],
     'default_locale' => 'fr',
 ];

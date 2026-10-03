@@ -188,7 +188,7 @@ $assetVersion = static function (string $path): string
             <span class="brand-project">ReNUTS</span>
         </a>
 
-        <nav class="desktop-nav" aria-label="Navigation">
+        <nav class="desktop-nav" aria-label="<?= e(tr($t, 'nav.navigation')) ?>">
 
             <a href="#project"><?= e(tr($t, 'nav.project')) ?></a>
 
@@ -228,7 +228,7 @@ $assetVersion = static function (string $path): string
 
             </a>
 
-            <button class="menu-button" type="button" aria-label="Menu" aria-expanded="false" data-menu-button>
+            <button class="menu-button" type="button" aria-label="<?= e(tr($t, 'nav.menu')) ?>" aria-expanded="false" data-menu-button>
 
                 <span></span><span></span>
 
@@ -254,7 +254,7 @@ $assetVersion = static function (string $path): string
 
             <a class="mobile-contact-link" href="<?= e($contactHref) ?>"><?= e(tr($t, 'nav.contact')) ?></a>
 
-            <div class="mobile-language-switcher" aria-label="Language">
+            <div class="mobile-language-switcher" aria-label="<?= e(tr($t, 'nav.language')) ?>">
                 <?php foreach ($config['locales'] as $availableLocale): ?>
                     <a
                         href="<?= e(locale_url($availableLocale)) ?>"
@@ -628,6 +628,11 @@ $assetVersion = static function (string $path): string
 
             </div>
 
+            <div class="science-note compact reveal">
+                <span>i</span>
+                <p><?= e(tr($t, 'science.note')) ?></p>
+            </div>
+
         </div>
 
     </section>
@@ -736,15 +741,15 @@ $assetVersion = static function (string $path): string
 
             <div class="local-graphic reveal" aria-hidden="true">
 
-                <span class="fruit fruit-one">Q</span>
+                <span class="fruit fruit-one"></span>
 
-                <span class="fruit fruit-two">P</span>
+                <span class="fruit fruit-two"></span>
 
-                <span class="fruit fruit-three">A</span>
+                <span class="fruit fruit-three"></span>
 
                 <div class="local-arrow">→</div>
 
-                <strong>LOCAL<br>VALUE</strong>
+                <strong><?= e(tr($t, 'local.graphic')) ?></strong>
 
             </div>
 
@@ -784,13 +789,22 @@ $assetVersion = static function (string $path): string
 
             <ol class="status-list reveal">
 
-                <?php foreach (tr($t, 'status.items', []) as $index => $item): ?>
+                <?php foreach (tr($t, 'status.phases', []) as $index => $phase): ?>
 
-                    <li>
+                    <li class="status-phase">
 
                         <span><?= str_pad((string) ($index + 1), 2, '0', STR_PAD_LEFT) ?></span>
 
-                        <p><?= e($item) ?></p>
+                        <div class="status-phase-copy">
+                            <div class="status-phase-label"><?= e($phase['label'] ?? '') ?></div>
+                            <h3><?= e($phase['title'] ?? '') ?></h3>
+
+                            <ul>
+                                <?php foreach (($phase['items'] ?? []) as $item): ?>
+                                    <li><?= e($item) ?></li>
+                                <?php endforeach; ?>
+                            </ul>
+                        </div>
 
                     </li>
 
@@ -816,21 +830,21 @@ $assetVersion = static function (string $path): string
 
             </div>
 
-            <div class="partner-tags reveal">
+            <div class="partner-axes">
 
-                <?php foreach (tr($t, 'partners.types', []) as $partner): ?>
+                <?php foreach (tr($t, 'partners.axes', []) as $index => $axis): ?>
 
-                    <span><?= e($partner) ?></span>
+                    <article class="partner-axis reveal">
+                        <span class="partner-axis-number"><?= str_pad((string) ($index + 1), 2, '0', STR_PAD_LEFT) ?></span>
+                        <div class="partner-axis-kicker"><?= e($axis['kicker'] ?? '') ?></div>
+                        <h3><?= e($axis['title'] ?? '') ?></h3>
+                        <p><?= e($axis['text'] ?? '') ?></p>
+                        <a href="<?= e($contactHref) ?>"><?= e($axis['cta'] ?? tr($t, 'partners.cta')) ?> <span aria-hidden="true">→</span></a>
+                    </article>
 
                 <?php endforeach; ?>
 
             </div>
-
-            <a class="button button-dark reveal" href="<?= e($contactHref) ?>">
-
-                <?= e(tr($t, 'partners.cta')) ?>
-
-            </a>
 
         </div>
 
@@ -862,6 +876,33 @@ $assetVersion = static function (string $path): string
 
                 </div>
 
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="section faq-section" id="faq">
+
+        <div class="shell faq-grid">
+
+            <div class="section-heading reveal">
+                <div class="eyebrow"><?= e(tr($t, 'faq.eyebrow')) ?></div>
+                <h2><?= e(tr($t, 'faq.title')) ?></h2>
+            </div>
+
+            <div class="faq-list reveal">
+                <?php foreach (tr($t, 'faq.items', []) as $item): ?>
+                    <details class="faq-item">
+                        <summary>
+                            <span><?= e($item['question'] ?? '') ?></span>
+                            <span class="faq-plus" aria-hidden="true">+</span>
+                        </summary>
+                        <div class="faq-answer">
+                            <p><?= e($item['answer'] ?? '') ?></p>
+                        </div>
+                    </details>
+                <?php endforeach; ?>
             </div>
 
         </div>
