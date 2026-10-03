@@ -3109,35 +3109,43 @@ input {
 }
 
 @media (max-width: 680px) {
+    .mobile-contact-link {
+        font-weight: 600;
+    }
+
     .mobile-language-switcher {
         display: flex;
         align-items: center;
-        gap: 8px;
-        padding: 14px 0;
-        border-bottom: 1px solid var(--line);
+        justify-content: center;
+        gap: 4px;
+        margin-top: 16px;
+        padding: 18px 0 4px;
+        border-top: 1px solid var(--line);
     }
 
     .mobile-menu .mobile-language-switcher a {
-        min-width: 42px;
-        padding: 9px 11px;
+        min-width: 38px;
+        padding: 8px 10px;
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        border: 1px solid var(--line);
+        border: 0;
         border-radius: 999px;
-        background: white;
-        color: var(--ink);
-        font-size: 11px;
+        background: transparent;
+        color: var(--muted);
+        font-size: 10px;
         font-weight: 700;
         line-height: 1;
         letter-spacing: .08em;
-        opacity: .55;
+        opacity: 1;
+    }
+
+    .mobile-menu .mobile-language-switcher a:hover {
+        background: rgba(29, 29, 27, .05);
     }
 
     .mobile-menu .mobile-language-switcher a.active {
         background: var(--ink);
-        border-color: var(--ink);
         color: white;
-        opacity: 1;
     }
 }
