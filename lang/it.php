@@ -94,3 +94,110 @@ return [
             'cake_text' => 'Noce · nocciola · mandorla',
             'binder_title' => 'Leganti locali',
             'binder_text' => 'Mela cotogna · mela · pera',
+            'mix_title' => 'Formulazione',
+            'mix_text' => 'Texture · legame · stabilità',
+            'output_title' => 'Applicazioni alimentari',
+            'output_text' => 'Barrette · granola · ingredienti B2B',
+        ],
+    ],
+    'status' => [
+        'eyebrow' => 'Avanzamento',
+        'title' => 'Un progetto preindustriale entrato nella fase di ricerca e sviluppo.',
+        'phases' => [
+            [
+                'label' => 'Fase 1 · Completata',
+                'title' => 'Strutturare le basi del progetto',
+                'items' => [
+                    'Concetto ReNUTS definito e programma R&S strutturato.',
+                    'Primi contatti avviati con operatori regionali della spremitura.',
+                    'Prime piste di formulazione definite.',
+                    'Individuate le prime esigenze tecniche e scientifiche.',
+                ],
+            ],
+            [
+                'label' => 'Fase 2 · In corso',
+                'title' => 'Misurare, formulare e dimostrare',
+                'items' => [
+                    'Caratterizzazione completa del panello in laboratorio: composizione, sicurezza e stabilità.',
+                    'Sviluppo e prove del primo prototipo, una barretta senza cottura.',
+                    'Contatti con HES-SO Valais per una collaborazione accademica e scientifica e con NutriChain per lo sviluppo e i test dei prodotti.',
+                ],
+            ],
+            [
+                'label' => 'Fase 3 · In seguito',
+                'title' => 'Passare alla scala industriale',
+                'items' => [
+                    'Prove pilota industriali e scale-up.',
+                    'Preparazione delle prossime fasi di produzione e ingresso sul mercato.',
+                    'Primi partenariati commerciali e sbocchi B2B.',
+                ],
+            ],
+        ],
+    ],
+    'partners' => [
+        'eyebrow' => 'Unirsi al progetto',
+        'title' => 'Costruiamo insieme la filiera.',
+        'text' => 'ReNUTS si costruisce con partner complementari. Tre modi concreti per contribuire al progetto.',
+        'cta' => 'Parlare con noi',
+        'axes' => [
+            [
+                'kicker' => 'Avete la materia',
+                'title' => 'Fornitori & produttori',
+                'text' => 'Mulini, presse e produttori di oleaginose: mettete a disposizione volumi, tracciabilità, dati di filiera e campioni rappresentativi.',
+                'cta' => 'Diventare partner materia',
+            ],
+            [
+                'kicker' => 'Avete la scienza o l’industria',
+                'title' => 'Partner scientifici & industriali',
+                'text' => 'Università, SUP, laboratori e industrie alimentari: contribuite alla caratterizzazione, alla prototipazione e allo scale-up.',
+                'cta' => 'Unirsi come partner R&S',
+            ],
+            [
+                'kicker' => 'Potete accelerare',
+                'title' => 'Partner istituzionali & finanziari',
+                'text' => 'Contribuite alla ricerca, allo sviluppo dei prodotti e alla creazione di una nuova filiera alimentare.',
+                'cta' => 'Sostenere il progetto',
+            ],
+        ],
+    ],
+    'about' => [
+        'eyebrow' => 'FORCENTO · Il team',
+        'title' => 'L’innovazione alimentare come punto di partenza.',
+        'text' => 'ReNUTS è un progetto di FORCENTO Sàrl. Kim e Florian mettono la loro esperienza imprenditoriale nelle proteine alternative e nell’innovazione alimentare al servizio di un approccio semplice: partire da una risorsa regionale esistente, dimostrarne scientificamente il potenziale e costruire attorno ad essa una filiera economicamente sostenibile.',
+        'founders' => 'Co-fondatori',
+    ],
+    'faq' => [
+        'eyebrow' => 'Domande frequenti',
+        'title' => 'Le domande che ci vengono poste più spesso.',
+        'items' => [
+            [
+                'question' => 'ReNUTS è semplicemente un’altra barretta proteica?',
+                'answer' => 'No. La barretta è un dimostratore, non il progetto. Serve a testare rapidamente materia e processi. L’obiettivo è caratterizzare una risorsa, costruire una filiera e aprire diverse applicazioni alimentari.',
+            ],
+            [
+                'question' => 'I panelli sono già consumati dalle persone?',
+                'answer' => 'Alcuni panelli di noce o mandorla sono già utilizzati in preparazioni artigianali o culinarie. ReNUTS si concentra sulla documentazione di composizione, sicurezza, stabilità e comportamento per valutare usi alimentari riproducibili su scala maggiore.',
+            ],
+            [
+                'question' => 'Perché questa valorizzazione è ancora poco sviluppata?',
+                'answer' => 'Perché una materia interessante non basta. Bisogna organizzare raccolta, tracciabilità, analisi, trasformazione, stabilità, processi industriali e sbocchi di mercato. ReNUTS lavora proprio per collegare queste fasi.',
+            ],
+        ],
+    ],
+    'final' => [
+        'title' => 'La materia esiste già. Costruiamo la prova e la filiera.',
+        'cta' => 'Parliamone',
+    ],
+    'footer' => [
+        'legal' => 'Progetto ReNUTS · R&S alimentare',
+        'rights' => 'Tutti i diritti riservati.',
+    ],
+    'hero_process' => [
+        'nut' => 'NOCI',
+        'pressing' => 'SPREMITURA',
+        'powder' => 'PANELLO',
+        'products' => 'APPLICAZIONI',
+        'resource' => 'UNA RISORSA ESISTENTE',
+        'value' => 'NUOVO VALORE',
+    ],
+];

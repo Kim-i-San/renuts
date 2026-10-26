@@ -94,3 +94,110 @@ return [
             'cake_text' => 'Walnut · hazelnut · almond',
             'binder_title' => 'Local binders',
             'binder_text' => 'Quince · apple · pear',
+            'mix_title' => 'Formulation',
+            'mix_text' => 'Texture · binding · stability',
+            'output_title' => 'Food applications',
+            'output_text' => 'Bars · granola · B2B ingredients',
+        ],
+    ],
+    'status' => [
+        'eyebrow' => 'Progress',
+        'title' => 'A pre-industrial project now in research and development.',
+        'phases' => [
+            [
+                'label' => 'Phase 1 · Completed',
+                'title' => 'Build the project foundations',
+                'items' => [
+                    'ReNUTS concept defined and R&D programme structured.',
+                    'Initial discussions held with regional oil-pressing businesses.',
+                    'Initial formulation routes defined.',
+                    'Initial technical and scientific needs identified.',
+                ],
+            ],
+            [
+                'label' => 'Phase 2 · In progress',
+                'title' => 'Measure, formulate and demonstrate',
+                'items' => [
+                    'Full laboratory characterisation of press cake: composition, safety and stability.',
+                    'Formulation and testing of the first prototype, a no-bake bar.',
+                    'Discussions with HES-SO Valais on an academic and scientific collaboration, and with NutriChain on product development and testing.',
+                ],
+            ],
+            [
+                'label' => 'Phase 3 · Upcoming',
+                'title' => 'Scale up',
+                'items' => [
+                    'Industrial pilot trials and scale-up.',
+                    'Prepare the next stages of production and market entry.',
+                    'First commercial partnerships and B2B outlets.',
+                ],
+            ],
+        ],
+    ],
+    'partners' => [
+        'eyebrow' => 'Join the project',
+        'title' => 'Let’s build the value chain together.',
+        'text' => 'ReNUTS is built with complementary partners. There are three concrete ways to contribute.',
+        'cta' => 'Talk with us',
+        'axes' => [
+            [
+                'kicker' => 'You have the material',
+                'title' => 'Suppliers & producers',
+                'text' => 'Mills, pressers and oilseed producers: contribute volumes, traceability, value-chain data and representative samples.',
+                'cta' => 'Become a material partner',
+            ],
+            [
+                'kicker' => 'You have the science or industry',
+                'title' => 'Scientific & industrial partners',
+                'text' => 'Universities, applied-science schools, laboratories and food manufacturers: contribute to characterisation, prototyping and scale-up.',
+                'cta' => 'Join as an R&D partner',
+            ],
+            [
+                'kicker' => 'You can help accelerate',
+                'title' => 'Institutional & financial partners',
+                'text' => 'Contribute to research, product development and the creation of a new food value chain.',
+                'cta' => 'Support the project',
+            ],
+        ],
+    ],
+    'about' => [
+        'eyebrow' => 'FORCENTO · The team',
+        'title' => 'Food innovation as a starting point.',
+        'text' => 'ReNUTS is led by FORCENTO Sàrl. Kim and Florian bring their entrepreneurial experience in alternative proteins and food innovation to a simple approach: start with an existing regional resource, scientifically demonstrate its potential, then build an economically viable value chain around it.',
+        'founders' => 'Co-founders',
+    ],
+    'faq' => [
+        'eyebrow' => 'Frequently asked questions',
+        'title' => 'The questions we hear most often.',
+        'items' => [
+            [
+                'question' => 'Is ReNUTS just another protein bar?',
+                'answer' => 'No. The bar is a demonstrator, not the project. It is used to test the material and processes quickly. The goal is to characterise a resource, build a value chain and open up several food applications.',
+            ],
+            [
+                'question' => 'Are press cakes already eaten by people?',
+                'answer' => 'Some walnut or almond press cakes are already used in artisan or culinary preparations. ReNUTS is focused on documenting composition, safety, stability and behaviour so that reproducible food uses can be considered at a larger scale.',
+            ],
+            [
+                'question' => 'Why is this type of valorisation still limited?',
+                'answer' => 'Because an interesting material is not enough. Collection, traceability, analysis, processing, stability, industrial processes and market outlets all have to be organised. ReNUTS is working to connect these steps.',
+            ],
+        ],
+    ],
+    'final' => [
+        'title' => 'The material already exists. Let’s build the evidence and the value chain.',
+        'cta' => 'Let’s talk',
+    ],
+    'footer' => [
+        'legal' => 'ReNUTS project · Food R&D',
+        'rights' => 'All rights reserved.',
+    ],
+    'hero_process' => [
+        'nut' => 'NUTS',
+        'pressing' => 'PRESSING',
+        'powder' => 'PRESS CAKE',
+        'products' => 'APPLICATIONS',
+        'resource' => 'AN EXISTING RESOURCE',
+        'value' => 'NEW VALUE',
+    ],
+];
