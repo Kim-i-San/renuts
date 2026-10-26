@@ -3667,3 +3667,58 @@ body {
         height: 20px;
     }
 }
+
+
+/* ReNUTS v4.3: badges d'avancement, sans changer la timeline */
+.status-phase-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    letter-spacing: normal;
+}
+.status-phase-label .status-phase-name {
+    color: rgba(255,255,255,.7);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .08em;
+}
+.status-phase-label .status-phase-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 5px 10px;
+    border-radius: 999px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .04em;
+    line-height: 1.2;
+    text-transform: none;
+    white-space: nowrap;
+}
+.status-phase-badge::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    flex: 0 0 6px;
+    border-radius: 50%;
+    background: currentColor;
+}
+.status-phase-1 .status-phase-badge {
+    color: #a9e9c6;
+    background: rgba(47, 172, 102, .16);
+    border: 1px solid rgba(92, 210, 143, .25);
+}
+.status-phase-2 .status-phase-badge {
+    color: #1d1d1b;
+    background: #70dfa3;
+    border: 1px solid #70dfa3;
+}
+.status-phase-2 .status-phase-badge::before {
+    box-shadow: 0 0 0 3px rgba(29, 29, 27, .10);
+}
+.status-phase-3 .status-phase-badge {
+    color: rgba(255,255,255,.65);
+    background: rgba(255,255,255,.08);
+    border: 1px solid rgba(255,255,255,.13);
+}

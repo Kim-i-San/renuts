@@ -867,12 +867,18 @@ $assetVersion = static function (string $path): string
 
                 <?php foreach (tr($t, 'status.phases', []) as $index => $phase): ?>
 
-                    <li class="status-phase">
+                    <li class="status-phase status-phase-<?= (int) $index + 1 ?>">
 
                         <span><?= str_pad((string) ($index + 1), 2, '0', STR_PAD_LEFT) ?></span>
 
                         <div class="status-phase-copy">
-                            <div class="status-phase-label"><?= e($phase['label'] ?? '') ?></div>
+                            <?php $phaseLabelParts = explode(' · ', (string) ($phase['label'] ?? ''), 2); ?>
+                            <div class="status-phase-label">
+                                <span class="status-phase-name"><?= e($phaseLabelParts[0]) ?></span>
+                                <?php if (isset($phaseLabelParts[1])): ?>
+                                    <span class="status-phase-badge"><?= e($phaseLabelParts[1]) ?></span>
+                                <?php endif; ?>
+                            </div>
                             <h3><?= e($phase['title'] ?? '') ?></h3>
 
                             <ul>

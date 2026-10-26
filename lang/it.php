@@ -171,6 +171,10 @@ return [
         'title' => 'Le domande che ci vengono poste più spesso.',
         'items' => [
             [
+                'question' => 'Che cos’è un panello di spremitura?',
+                'answer' => 'Il panello è la parte solida che rimane dopo l’estrazione dell’olio da noci, nocciole, mandorle o semi. Contiene ancora proteine, fibre e quantità variabili di grassi. Oggi viene spesso destinato all’alimentazione animale, ma potrebbe essere valorizzato anche nell’alimentazione umana, dopo le necessarie verifiche di qualità e sicurezza.',
+            ],
+            [
                 'question' => 'ReNUTS è semplicemente un’altra barretta proteica?',
                 'answer' => 'No. La barretta è un dimostratore, non il progetto. Serve a testare rapidamente materia e processi. L’obiettivo è caratterizzare una risorsa, costruire una filiera e aprire diverse applicazioni alimentari.',
             ],

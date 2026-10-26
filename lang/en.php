@@ -171,6 +171,10 @@ return [
         'title' => 'The questions we hear most often.',
         'items' => [
             [
+                'question' => 'What is a press cake?',
+                'answer' => 'A press cake is the solid material left after oil has been extracted from walnuts, hazelnuts, almonds or seeds. It still contains protein, fibre and varying amounts of fat. Often used in animal feed, it may also have potential as a food ingredient, provided its quality and safety are assessed.',
+            ],
+            [
                 'question' => 'Is ReNUTS just another protein bar?',
                 'answer' => 'No. The bar is a demonstrator, not the project. It is used to test the material and processes quickly. The goal is to characterise a resource, build a value chain and open up several food applications.',
             ],

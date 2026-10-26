@@ -171,6 +171,10 @@ return [
         'title' => 'Les questions qu’on nous pose le plus.',
         'items' => [
             [
+                'question' => 'Qu’est-ce qu’un tourteau ?',
+                'answer' => 'Un tourteau est la partie solide qui reste après l’extraction de l’huile de noix, noisettes, amandes ou graines. Il contient encore des protéines, des fibres et une quantité variable de matières grasses. Aujourd’hui souvent utilisé pour l’alimentation animale, il peut aussi présenter un intérêt pour l’alimentation humaine, à condition d’en vérifier la qualité et la sécurité.',
+            ],
+            [
                 'question' => 'ReNUTS est-il juste encore une barre protéinée de plus ?',
                 'answer' => 'Non. La barre est un démonstrateur, pas le projet. Elle sert à tester rapidement la matière et les procédés. L’objectif est de caractériser une ressource, de construire une filière et d’ouvrir plusieurs applications alimentaires.',
             ],
