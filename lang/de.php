@@ -2,7 +2,7 @@
 
 return [
     'meta' => [
-        'title' => 'ReNUTS — Neuer Wert nach dem Pressen | FORCENTO',
+        'title' => 'ReNUTS · Neuer Wert nach dem Pressen | FORCENTO',
         'description' => 'ReNUTS untersucht die Nutzung von Presskuchen aus Nüssen und Ölsaaten für die menschliche Ernährung – wissenschaftlich und regional.',
     ],
     'nav' => [
@@ -20,22 +20,22 @@ return [
     'hero' => [
         'eyebrow' => 'Lebensmittelinnovation · Westschweiz',
         'title' => 'Neuen Wert aus dem schaffen, was nach dem Pressen bleibt.',
-        'text' => 'Jedes Jahr entstehen lokal Presskuchen – das feste Material, das nach dem Pressen von Walnüssen, Haselnüssen, Mandeln oder Samen zur Ölgewinnung zurückbleibt – und werden grösstenteils als Tierfutter genutzt. ReNUTS will wissenschaftlich bestimmen, welchen Wert diese bestehende Ressource für die menschliche Ernährung haben kann.',
+        'text' => 'Beim Pressen von Walnüssen, Haselnüssen, Mandeln und Ölsaaten fallen jedes Jahr regional Presskuchen an. Ein grosser Teil wird bisher als Tierfutter verwendet. ReNUTS untersucht wissenschaftlich, welches Potenzial diese Rohstoffe für die menschliche Ernährung bieten.',
         'primary' => 'Projekt entdecken',
         'secondary' => 'Wertschöpfungskette mitgestalten',
-        'status' => 'Vorindustrielles Projekt · F&E im Aufbau',
+        'status' => 'Vorindustrielles Projekt · F&E läuft',
     ],
     'resource' => [
         'eyebrow' => 'Das Projekt',
-        'title' => 'Die Ressource ist bereits da. Ihr Wert muss noch belegt werden.',
-        'text1' => 'Das Projekt besteht nicht darin, noch einen Proteinriegel auf den Markt zu bringen. Zuerst wird ein bestehendes Material charakterisiert, seine sichere Lebensmittelverwendung geklärt und untersucht, wie es reproduzierbar verarbeitet werden kann.',
-        'text2' => 'Danach sollen Zutaten und Anwendungen für handwerkliche oder industrielle Produktion entwickelt werden – ohne ernährungsbezogene Leistungen vorauszusetzen, bevor sie gemessen wurden.',
+        'title' => 'Eine regionale Ressource mit ungenutztem Potenzial.',
+        'text1' => 'ReNUTS geht über die Entwicklung eines Proteinriegels hinaus. Zunächst werden die Presskuchen genauer untersucht, ihre Eignung als Lebensmittel geprüft und geeignete Verarbeitungsverfahren ermittelt.',
+        'text2' => 'Darauf aufbauend sollen Zutaten und Anwendungen für die handwerkliche und industrielle Herstellung entstehen. Grundlage sind konkrete Untersuchungsergebnisse.',
         'note' => 'Nährwerte, Stabilität und funktionelle Eigenschaften müssen je nach Rohstoff, Herkunft und Pressverfahren gemessen werden.',
     ],
     'opportunity' => [
         'eyebrow' => 'Warum jetzt',
-        'title' => 'Wachsendes Interesse an Protein – und ein wachsender Anspruch an Glaubwürdigkeit.',
-        'text' => 'Proteinreiche Produkte werden zahlreicher, doch ihr tatsächlicher Nutzen hängt von Zusammensetzung und Rezeptur ab. ReNUTS geht den umgekehrten Weg: mit einem rohen, regionalen und bereits vorhandenen Material beginnen und seinen Wert belegen, bevor es vermarktet wird.',
+        'title' => 'Mehr Interesse an Protein und seiner Qualität.',
+        'text' => 'Proteinreiche Produkte werden immer beliebter. Entscheidend ist jedoch ihre tatsächliche Zusammensetzung. ReNUTS untersucht eine bereits vorhandene regionale Ressource und entwickelt daraus geeignete Lebensmittelanwendungen.',
     ],
     'process' => [
         'eyebrow' => 'Von der Ressource zum Markt',
@@ -46,7 +46,7 @@ return [
             ['Analyse', 'Zusammensetzung, Sicherheit, Stabilität und Funktionalität.'],
             ['F&E', 'Formulierung, Versuche, Verfahren und Validierung.'],
             ['Anwendungen', 'Demonstratoren, Zutaten und neue Einsatzmöglichkeiten.'],
-            ['Neuer Wert', 'Reproduzierbare und wirtschaftlich tragfähige Absatzwege.'],
+            ['Neuer Wert', 'Konkrete und wirtschaftlich tragfähige Absatzmöglichkeiten.'],
         ],
     ],
     'science' => [
@@ -61,13 +61,13 @@ return [
             ['Funktionelle Eigenschaften', 'Partikelgrösse, Textur, Absorption, Verhalten in Rezepturen und Einfluss des Restöls.'],
             ['Regulatorischer Rahmen', 'Auslobungen und Marktbedingungen müssen auf gemessenen Ergebnissen beruhen.'],
         ],
-        'note' => 'Oxidation, Allergene, Haltbarkeit und Reproduzierbarkeit sind keine Themen für später: Sie gehören von Anfang an zum F&E-Programm.',
+        'note' => 'Oxidation, Allergene, Haltbarkeit und gleichbleibende Qualität werden von Beginn an in der Forschung berücksichtigt.',
     ],
     'demo' => [
         'eyebrow' => 'Erster Demonstrator',
-        'title' => 'Ein Riegel zum Lernen – nicht als Grenze des Projekts.',
-        'text' => 'Ein roher, ungebackener Lebensmittelriegel dient als erster technischer Demonstrator. Damit lassen sich Einmischungsgrad, Textur, Geschmack, Bindung, Stabilität, Lagerung und industrielle Machbarkeit rasch testen.',
-        'more' => 'Langfristig könnte das Material auch in funktionellen Mehlen, Granolas, Müslimischungen, Crackern, Frühstücksprodukten oder B2B-Zutaten eingesetzt werden.',
+        'title' => 'Ein erster Riegel, um das Potenzial der Presskuchen zu testen.',
+        'text' => 'Ein ungebackener Riegel dient als erster Prototyp. Damit lassen sich der Presskuchenanteil, Textur, Geschmack, Bindung, Haltbarkeit und die Möglichkeiten einer grösseren Produktion prüfen.',
+        'more' => 'Langfristig könnten Presskuchen auch für Mehle, Granola, Müslimischungen, Cracker, Frühstücksprodukte oder Zutaten für Lebensmittelhersteller genutzt werden.',
         'badge' => 'Proof of concept',
     ],
     'chain' => [
@@ -94,110 +94,3 @@ return [
             'cake_text' => 'Walnuss · Haselnuss · Mandel',
             'binder_title' => 'Regionale Bindemittel',
             'binder_text' => 'Quitte · Apfel · Birne',
-            'mix_title' => 'Formulierung',
-            'mix_text' => 'Textur · Bindung · Stabilität',
-            'output_title' => 'Lebensmittelanwendungen',
-            'output_text' => 'Riegel · Granola · B2B-Zutaten',
-        ],
-    ],
-    'status' => [
-        'eyebrow' => 'Stand',
-        'title' => 'Ein vorindustrielles Projekt in der Strukturierungsphase.',
-        'phases' => [
-            [
-                'label' => 'Phase 1 · Laufend',
-                'title' => 'Projektbasis strukturieren',
-                'items' => [
-                    'ReNUTS-Konzept definiert und F&E-Programm strukturiert.',
-                    'Erster Rohstoffpartner identifiziert: positive Gespräche mit Moulin de Sévery.',
-                    'Erste Formulierungsansätze definiert.',
-                    'Kontakt mit dem SPEI zur Prüfung eines NRP-Vorgehens aufgenommen.',
-                ],
-            ],
-            [
-                'label' => 'Phase 2 · Nächster Schritt',
-                'title' => 'Messen, formulieren und demonstrieren',
-                'items' => [
-                    'Vollständige Laborcharakterisierung des Presskuchens: Zusammensetzung, Sicherheit und Stabilität.',
-                    'Erster Demonstrator — ein roher Riegel — formuliert und getestet.',
-                    'Aufbau des Partnerkonsortiums.',
-                ],
-            ],
-            [
-                'label' => 'Phase 3 · Danach',
-                'title' => 'Skalieren',
-                'items' => [
-                    'Industrielle Pilotversuche und Skalierung.',
-                    'Einreichung des NRP-Dossiers.',
-                    'Erste kommerzielle Partnerschaften und B2B-Abnehmer.',
-                ],
-            ],
-        ],
-    ],
-    'partners' => [
-        'eyebrow' => 'Projekt mitgestalten',
-        'title' => 'Bauen wir die Wertschöpfungskette gemeinsam auf.',
-        'text' => 'ReNUTS entsteht mit komplementären Partnern. Drei konkrete Möglichkeiten, zum Projekt beizutragen.',
-        'cta' => 'Mit uns sprechen',
-        'axes' => [
-            [
-                'kicker' => 'Sie haben den Rohstoff',
-                'title' => 'Lieferanten & Produzenten',
-                'text' => 'Mühlen, Pressbetriebe und Ölsaatenproduzenten: bringen Sie Mengen, Rückverfolgbarkeit, Kettendaten und repräsentative Proben ein.',
-                'cta' => 'Rohstoffpartner werden',
-            ],
-            [
-                'kicker' => 'Sie haben Wissenschaft oder Industrie',
-                'title' => 'Wissenschafts- & Industriepartner',
-                'text' => 'Universitäten, Fachhochschulen, Labore und Lebensmittelhersteller: unterstützen Sie Charakterisierung, Prototyping und Skalierung.',
-                'cta' => 'F&E-Partner werden',
-            ],
-            [
-                'kicker' => 'Sie können beschleunigen',
-                'title' => 'Institutionelle & Finanzierungspartner',
-                'text' => 'Unterstützen Sie die F&E-Phase und den Aufbau der Wertschöpfungskette, auch im Rahmen des geprüften NRP-Vorgehens.',
-                'cta' => 'Projekt unterstützen',
-            ],
-        ],
-    ],
-    'about' => [
-        'eyebrow' => 'FORCENTO · Das Team',
-        'title' => 'Lebensmittelinnovation als Ausgangspunkt.',
-        'text' => 'ReNUTS wird von FORCENTO Sàrl getragen. Kim und Florian bringen ihre unternehmerische Erfahrung mit alternativen Proteinen und Lebensmittelinnovation in einen klaren Ansatz ein: mit einer bestehenden regionalen Ressource starten, ihr Potenzial wissenschaftlich belegen und daraus eine wirtschaftlich tragfähige Wertschöpfungskette aufbauen.',
-        'founders' => 'Mitgründer',
-    ],
-    'faq' => [
-        'eyebrow' => 'Häufige Fragen',
-        'title' => 'Die Fragen, die uns am häufigsten gestellt werden.',
-        'items' => [
-            [
-                'question' => 'Ist ReNUTS einfach noch ein Proteinriegel?',
-                'answer' => 'Nein. Der Riegel ist ein Demonstrator, nicht das Projekt. Er dient dazu, Rohstoff und Verfahren schnell zu testen. Ziel ist es, eine Ressource zu charakterisieren, eine Wertschöpfungskette aufzubauen und mehrere Lebensmittelanwendungen zu ermöglichen.',
-            ],
-            [
-                'question' => 'Werden Presskuchen bereits von Menschen verzehrt?',
-                'answer' => 'Bestimmte Walnuss- oder Mandelpresskuchen werden bereits in handwerklichen oder kulinarischen Zubereitungen eingesetzt. ReNUTS konzentriert sich darauf, Zusammensetzung, Sicherheit, Stabilität und Verhalten zu dokumentieren, um reproduzierbare Lebensmittelanwendungen in grösserem Massstab zu ermöglichen.',
-            ],
-            [
-                'question' => 'Warum ist diese Nutzung noch wenig entwickelt?',
-                'answer' => 'Weil ein interessanter Rohstoff allein nicht genügt. Sammlung, Rückverfolgbarkeit, Analysen, Verarbeitung, Stabilität, industrielle Verfahren und Absatzwege müssen organisiert werden. ReNUTS arbeitet genau daran, diese Schritte zu verbinden.',
-            ],
-        ],
-    ],
-    'final' => [
-        'title' => 'Die Ressource existiert bereits. Bauen wir Belege und Wertschöpfungskette auf.',
-        'cta' => 'Projekt besprechen',
-    ],
-    'footer' => [
-        'legal' => 'ReNUTS-Projekt — Lebensmittel-F&E',
-        'rights' => 'Alle Rechte vorbehalten.',
-    ],
-    'hero_process' => [
-        'nut' => 'NÜSSE',
-        'pressing' => 'PRESSEN',
-        'powder' => 'PRESSKUCHEN',
-        'products' => 'ANWENDUNGEN',
-        'resource' => 'EINE BESTEHENDE RESSOURCE',
-        'value' => 'NEUER WERT',
-    ],
-];
