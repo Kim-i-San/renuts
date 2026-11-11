@@ -98,6 +98,16 @@ $assetVersion = static function (string $path): string
 
 <head>
 
+
+<!-- Google Tag Manager - ReNUTS -->
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-WKTDNW4X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
+
+
     <meta charset="utf-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
