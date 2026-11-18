@@ -120,7 +120,9 @@ return [
                 'items' => [
                     'Vollständige Laborcharakterisierung des Presskuchens: Zusammensetzung, Sicherheit und Stabilität.',
                     'Entwicklung und Erprobung des ersten Prototyps, eines ungebackenen Riegels.',
-                    'Gespräche mit der HES-SO Valais über eine akademische und wissenschaftliche Zusammenarbeit sowie mit NutriChain über Produktentwicklung und Tests.',
+                    'Der Innovationsscheck von Innosuisse wurde zugesprochen: ein wichtiger Schritt für die nächsten Forschungs- und Entwicklungsarbeiten.',
+                    'Vorbereitung von Laboranalysen und Versuchen mit der HES-SO Valais-Wallis zur Untersuchung von Presskuchen und ersten Rezepturansätzen.',
+                    'Produktentwicklung und Versuche mit NutriChain sind für die folgenden Projektschritte vorgesehen.',
                 ],
             ],
             [
@@ -133,6 +135,12 @@ return [
                 ],
             ],
         ],
+    ],
+    'featured_partners' => [
+        'subtitle' => 'Partner für die nächste Phase von ReNUTS',
+        'intro' => 'Mit dem zugesprochenen Innovationsscheck von Innosuisse erreicht ReNUTS einen neuen Meilenstein. Die Testphase mit der HES-SO Valais-Wallis kann nun beginnen.',
+        'innosuisse' => 'Innovationsförderung · Innovationsscheck bewilligt',
+        'hesso' => 'Wissenschaftlicher Partner · Analysen und Versuche geplant',
     ],
     'partners' => [
         'eyebrow' => 'Projekt mitgestalten',

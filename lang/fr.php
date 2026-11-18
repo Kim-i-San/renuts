@@ -120,7 +120,9 @@ return [
                 'items' => [
                     'Caractérisation complète du tourteau en laboratoire : composition, sécurité et stabilité.',
                     'Formulation et essais du premier démonstrateur, une barre sans cuisson.',
-                    'Échanges avec la HES-SO Valais pour une collaboration académique et scientifique, et avec NutriChain pour le développement et les essais produits.',
+                    'chèque d’innovation d’Innosuisse obtenu : une étape importante pour lancer la prochaine série de travaux de recherche et développement.',
+                    'Préparation des analyses et des essais avec la HES-SO Valais-Wallis afin d’évaluer les tourteaux et les premières pistes de formulation.',
+                    'Développement et essais produits envisagés avec NutriChain dans la suite du programme.',
                 ],
             ],
             [
@@ -133,6 +135,12 @@ return [
                 ],
             ],
         ],
+    ],
+    'featured_partners' => [
+        'subtitle' => 'Ils accompagnent la prochaine étape de ReNUTS',
+        'intro' => 'Avec l’obtention du chèque d’innovation d’Innosuisse, ReNUTS franchit une nouvelle étape. Les travaux de test avec la HES-SO Valais-Wallis vont pouvoir démarrer.',
+        'innosuisse' => 'Soutien à l’innovation · Chèque d’innovation obtenu',
+        'hesso' => 'Partenaire scientifique · Analyses et essais à venir',
     ],
     'partners' => [
         'eyebrow' => 'Rejoindre le projet',

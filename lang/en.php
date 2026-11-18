@@ -120,7 +120,9 @@ return [
                 'items' => [
                     'Full laboratory characterisation of press cake: composition, safety and stability.',
                     'Formulation and testing of the first prototype, a no-bake bar.',
-                    'Discussions with HES-SO Valais on an academic and scientific collaboration, and with NutriChain on product development and testing.',
+                    'Innosuisse’s innovation cheque has been awarded, an important step towards the next research and development activities.',
+                    'Preparing laboratory analyses and trials with HES-SO Valais-Wallis to assess press cakes and initial formulation approaches.',
+                    'Product development and trials with NutriChain are being considered for the next project stages.',
                 ],
             ],
             [
@@ -133,6 +135,12 @@ return [
                 ],
             ],
         ],
+    ],
+    'featured_partners' => [
+        'subtitle' => 'Supporting the next stage of ReNUTS',
+        'intro' => 'ReNUTS has reached a new milestone with the award of Innosuisse’s innovation cheque. The testing phase with HES-SO Valais-Wallis can now begin.',
+        'innosuisse' => 'Innovation support · Innovation cheque awarded',
+        'hesso' => 'Scientific partner · Analyses and trials ahead',
     ],
     'partners' => [
         'eyebrow' => 'Join the project',

@@ -120,7 +120,9 @@ return [
                 'items' => [
                     'Caratterizzazione completa del panello in laboratorio: composizione, sicurezza e stabilità.',
                     'Sviluppo e prove del primo prototipo, una barretta senza cottura.',
-                    'Contatti con HES-SO Valais per una collaborazione accademica e scientifica e con NutriChain per lo sviluppo e i test dei prodotti.',
+                    'L’assegno per l’innovazione di Innosuisse è stato ottenuto: un passo importante verso le prossime attività di ricerca e sviluppo.',
+                    'Preparazione delle analisi di laboratorio e delle prove con HES-SO Valais-Wallis per valutare i panelli e le prime formulazioni.',
+                    'Lo sviluppo e le prove di prodotto con NutriChain sono previsti nelle prossime fasi del progetto.',
                 ],
             ],
             [
@@ -133,6 +135,12 @@ return [
                 ],
             ],
         ],
+    ],
+    'featured_partners' => [
+        'subtitle' => 'Partner per la prossima fase di ReNUTS',
+        'intro' => 'ReNUTS compie un nuovo passo grazie all’assegno per l’innovazione ottenuto da Innosuisse. Può ora iniziare la fase di test con HES-SO Valais-Wallis.',
+        'innosuisse' => 'Sostegno all’innovazione · Assegno per l’innovazione ottenuto',
+        'hesso' => 'Partner scientifico · Analisi e prove in programma',
     ],
     'partners' => [
         'eyebrow' => 'Unirsi al progetto',

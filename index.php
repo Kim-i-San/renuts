@@ -922,6 +922,33 @@ $assetVersion = static function (string $path): string
 
             </div>
 
+            <div class="featured-partners reveal">
+                <div class="featured-partners-heading">
+                    <p class="featured-partners-eyebrow"><?= e(tr($t, 'featured_partners.subtitle')) ?></p>
+                    <p class="featured-partners-intro"><?= e(tr($t, 'featured_partners.intro')) ?></p>
+                </div>
+                <div class="featured-partners-grid">
+                    <article class="featured-partner">
+                        <div class="featured-partner-logo">
+                            <img src="/assets/img/innosuisse.png?v=<?= e($assetVersion('assets/img/innosuisse.png')) ?>"
+                                 alt="Innosuisse" loading="lazy"
+                                 onerror="this.hidden=true">
+                        </div>
+                        <h3>Innosuisse</h3>
+                        <p><?= e(tr($t, 'featured_partners.innosuisse')) ?></p>
+                    </article>
+                    <article class="featured-partner">
+                        <div class="featured-partner-logo">
+                            <img src="/assets/img/hes-so-valais.png?v=<?= e($assetVersion('assets/img/hes-so-valais.png')) ?>"
+                                 alt="HES-SO Valais-Wallis" loading="lazy"
+                                 onerror="this.hidden=true">
+                        </div>
+                        <h3>HES-SO Valais-Wallis</h3>
+                        <p><?= e(tr($t, 'featured_partners.hesso')) ?></p>
+                    </article>
+                </div>
+            </div>
+
             <div class="partner-axes">
 
                 <?php foreach (tr($t, 'partners.axes', []) as $index => $axis): ?>

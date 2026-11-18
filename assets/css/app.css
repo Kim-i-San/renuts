@@ -3273,6 +3273,57 @@ body {
     background: var(--green);
 }
 
+/* Named innovation and scientific partners */
+.featured-partners {
+    max-width: 1080px;
+    margin: 48px auto 0;
+    text-align: left;
+}
+.featured-partners-heading { max-width: 780px; margin-bottom: 24px; }
+.featured-partners-eyebrow {
+    margin: 0 0 10px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--green-deep);
+}
+.featured-partners-intro {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--muted);
+}
+.featured-partners-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.featured-partner {
+    padding: 26px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 24px;
+}
+.featured-partner-logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 104px;
+    margin-bottom: 14px;
+}
+.featured-partner-logo img {
+    display: block;
+    max-height: 90px;
+    max-width: 85%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+.featured-partner-logo img[hidden] { display: none; }
+.featured-partner h3 { margin: 0 0 8px; font-size: 20px; line-height: 1.25; }
+.featured-partner p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.6; }
+@media (max-width: 680px) {
+    .featured-partners-grid { grid-template-columns: 1fr; }
+    .featured-partner { padding: 22px; }
+}
+
 /* Join project — 3 axes */
 .partner-axes {
     max-width: 1080px;
