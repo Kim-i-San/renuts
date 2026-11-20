@@ -32,6 +32,12 @@ return [
         'text2' => 'The next goal is to develop ingredients and applications for small-scale or industrial production, based on actual test results.',
         'note' => 'Nutritional values, stability and functional properties must be established material by material, according to origin and pressing process.',
     ],
+    'project_video' => [
+        'heading' => 'Discover ReNUTS on video',
+        'play' => 'Watch the presentation',
+        'title' => 'ReNUTS presentation video',
+        'subtitles' => 'Subtitles follow the website language when available on YouTube.',
+    ],
     'opportunity' => [
         'eyebrow' => 'Why now',
         'title' => 'Growing interest in protein and its quality.',

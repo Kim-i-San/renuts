@@ -32,6 +32,12 @@ return [
         'text2' => 'L’objectif est ensuite de développer des ingrédients et des applications adaptés à la production artisanale ou industrielle, en s’appuyant sur des résultats d’analyse concrets.',
         'note' => 'Les valeurs nutritionnelles, la stabilité et les propriétés fonctionnelles doivent être établies matière par matière, selon l’origine et le procédé de pressage.',
     ],
+    'project_video' => [
+        'heading' => 'Découvrir ReNUTS en vidéo',
+        'play' => 'Voir la présentation',
+        'title' => 'Vidéo de présentation de ReNUTS',
+        'subtitles' => 'Les sous-titres sont affichés dans la langue du site lorsqu’ils sont disponibles sur YouTube.',
+    ],
     'opportunity' => [
         'eyebrow' => 'Pourquoi maintenant',
         'title' => 'Un intérêt croissant pour les protéines et leur qualité.',

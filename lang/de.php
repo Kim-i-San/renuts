@@ -32,6 +32,12 @@ return [
         'text2' => 'Darauf aufbauend sollen Zutaten und Anwendungen für die handwerkliche und industrielle Herstellung entstehen. Grundlage sind konkrete Untersuchungsergebnisse.',
         'note' => 'Nährwerte, Stabilität und funktionelle Eigenschaften müssen je nach Rohstoff, Herkunft und Pressverfahren gemessen werden.',
     ],
+    'project_video' => [
+        'heading' => 'ReNUTS im Video entdecken',
+        'play' => 'Präsentation ansehen',
+        'title' => 'ReNUTS Präsentationsvideo',
+        'subtitles' => 'Untertitel werden nach Möglichkeit in der Sprache der Website angezeigt.',
+    ],
     'opportunity' => [
         'eyebrow' => 'Warum jetzt',
         'title' => 'Mehr Interesse an Protein und seiner Qualität.',

@@ -548,6 +548,29 @@ $assetVersion = static function (string $path): string
 
         </div>
 
+        <!-- RENUTS_PROJECT_VIDEO_V1: YouTube is loaded only after user clicks Play. -->
+        <div class="shell project-video reveal" aria-label="<?= e(tr($t, 'project_video.title')) ?>">
+            <div class="project-video-heading">
+                <div class="eyebrow"><?= e(tr($t, 'resource.eyebrow')) ?></div>
+                <h3><?= e(tr($t, 'project_video.heading')) ?></h3>
+            </div>
+            <div class="project-video-frame" data-project-video>
+                <button class="project-video-poster" type="button"
+                    data-project-video-play
+                    data-video-id="m5K0Iv9UiQE"
+                    data-video-locale="<?= e($locale) ?>"
+                    data-video-title="<?= e(tr($t, 'project_video.title')) ?>"
+                    aria-label="<?= e(tr($t, 'project_video.play')) ?>">
+                    <span class="project-video-mark" aria-hidden="true">ReNUTS</span>
+                    <span class="project-video-play-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="27" height="27"><path d="M8 5v14l11-7z"/></svg>
+                    </span>
+                    <span class="project-video-play-label"><?= e(tr($t, 'project_video.play')) ?></span>
+                </button>
+            </div>
+            <p class="project-video-caption"><?= e(tr($t, 'project_video.subtitles')) ?></p>
+        </div>
+
     </section>
 
     <section class="section section-white">
@@ -1091,6 +1114,35 @@ $assetVersion = static function (string $path): string
 
     syncHeaderState();
     window.addEventListener('scroll', syncHeaderState, { passive: true });
+})();
+</script>
+
+<script>
+// RENUTS_PROJECT_VIDEO_V1: Privacy-conscious, click-to-load YouTube player.
+(() => {
+    const play = document.querySelector('[data-project-video-play]');
+    if (!play) return;
+    play.addEventListener('click', () => {
+        const frame = play.closest('[data-project-video]');
+        if (!frame) return;
+        const locale = ['fr', 'en', 'de', 'it'].includes(play.dataset.videoLocale)
+            ? play.dataset.videoLocale : 'fr';
+        const url = new URL('https://www.youtube-nocookie.com/embed/m5K0Iv9UiQE');
+        url.searchParams.set('autoplay', '1');
+        url.searchParams.set('playsinline', '1');
+        url.searchParams.set('rel', '0');
+        url.searchParams.set('hl', locale);
+        url.searchParams.set('cc_lang_pref', locale);
+        url.searchParams.set('cc_load_policy', '1');
+        const player = document.createElement('iframe');
+        player.src = url.toString();
+        player.title = play.dataset.videoTitle || 'ReNUTS';
+        player.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+        player.allowFullscreen = true;
+        player.referrerPolicy = 'strict-origin-when-cross-origin';
+        player.loading = 'eager';
+        frame.replaceChildren(player);
+    }, { once: true });
 })();
 </script>
 

@@ -32,6 +32,12 @@ return [
         'text2' => 'L’obiettivo successivo è sviluppare ingredienti e applicazioni per la produzione artigianale o industriale, partendo dai risultati concreti delle analisi.',
         'note' => 'Valori nutrizionali, stabilità e proprietà funzionali devono essere stabiliti materia per materia, in funzione dell’origine e del processo di spremitura.',
     ],
+    'project_video' => [
+        'heading' => 'Scopri ReNUTS in video',
+        'play' => 'Guarda la presentazione',
+        'title' => 'Video di presentazione di ReNUTS',
+        'subtitles' => 'I sottotitoli seguono la lingua del sito quando disponibili su YouTube.',
+    ],
     'opportunity' => [
         'eyebrow' => 'Perché ora',
         'title' => 'Cresce l’interesse per le proteine e per la loro qualità.',
